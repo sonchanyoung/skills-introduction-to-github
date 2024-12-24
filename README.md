@@ -1,75 +1,133 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Product Platform</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+        header {
+            background-color: #87CEEB;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-# Introduction to GitHub
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-_Get started using GitHub in less than an hour._
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
 
-</header>
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+        .main-banner {
+            background-color: #d5f4fd;
+            text-align: center;
+            padding: 50px 20px;
+        }
 
-## Step 1: Create a branch
+        .main-banner h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #333;
+        }
 
-_Welcome to "Introduction to GitHub"! :wave:_
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: white;
+        }
 
-**What is GitHub?**: GitHub is a collaboration platform that uses _[Git](https://docs.github.com/get-started/quickstart/github-glossary#git)_ for versioning. GitHub is a popular place to share and contribute to [open-source](https://docs.github.com/get-started/quickstart/github-glossary#open-source) software.
-<br>:tv: [Video: What is GitHub?](https://www.youtube.com/watch?v=pBy1zgt0XPc)
+        .category-item {
+            text-align: center;
+        }
 
-**What is a repository?**: A _[repository](https://docs.github.com/get-started/quickstart/github-glossary#repository)_ is a project containing files and folders. A repository tracks versions of files and folders. For more information, see "[About repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)" from GitHub Docs.
+        .featured-creators, .new-requests {
+            padding: 20px;
+        }
 
-**What is a branch?**: A _[branch](https://docs.github.com/en/get-started/quickstart/github-glossary#branch)_ is a parallel version of your repository. By default, your repository has one branch named `main` and it is considered to be the definitive branch. Creating additional branches allows you to copy the `main` branch of your repository and safely make any changes without disrupting the main project. Many people use branches to work on specific features without affecting any other parts of the project.
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
 
-Branches allow you to separate your work from the `main` branch. In other words, everyone's work is safe while you contribute. For more information, see "[About branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)".
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            background-color: white;
+            margin-bottom: 20px;
+        }
 
-**What is a profile README?**: A _[profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)_ is essentially an "About me" section on your GitHub profile where you can share information about yourself with the community on GitHub.com. GitHub shows your profile README at the top of your profile page. For more information, see "[Managing your profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)".
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Custom Platform</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
 
-![profile-readme-example](/images/profile-readme-example.png)
+    <section class="main-banner">
+        <h1>Welcome to Your Custom Product Platform</h1>
+        <p>Create or discover unique, personalized products today!</p>
+    </section>
 
-### :keyboard: Activity: Your first branch
+    <section class="categories">
+        <div class="category-item">
+            <h3>Figures</h3>
+        </div>
+        <div class="category-item">
+            <h3>Custom Goods</h3>
+        </div>
+        <div class="category-item">
+            <h3>More...</h3>
+        </div>
+    </section>
 
-1. Open a new browser tab and navigate to your newly made repository. Then, work on the steps in your second tab while you read the instructions in this tab.
-2. Navigate to the **< > Code** tab in the header menu of your repository.
+    <section class="featured-creators">
+        <div class="section-title">Featured Creators</div>
+        <div class="card">Creator 1</div>
+        <div class="card">Creator 2</div>
+    </section>
 
-   ![code-tab](/images/code-tab.png)
+    <section class="new-requests">
+        <div class="section-title">New Requests</div>
+        <div class="card">Request 1</div>
+        <div class="card">Request 2</div>
+    </section>
 
-3. Click on the **main** branch drop-down.
-
-   ![main-branch-dropdown](/images/main-branch-dropdown.png)
-
-4. In the field, name your branch `my-first-branch`. In this case, the name must be `my-first-branch` to trigger the course workflow.
-5. Click **Create branch: my-first-branch** to create your branch.
-
-   ![create-branch-button](/images/create-branch-button.png)
-
-   The branch will automatically switch to the one you have just created.
-   The **main** branch drop-down bar will reflect your new branch and display the new branch name.
-
-6. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+    <footer>
+        &copy; 2024 Custom Product Platform | All Rights Reserved
+    </footer>
+</body>
+</html>
